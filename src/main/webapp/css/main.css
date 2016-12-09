@@ -1,0 +1,14 @@
+table {
+    border: 1px solid black;
+}
+
+table th {
+    background: yellow;
+}
+
+ table th,
+ table td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: left;
+}

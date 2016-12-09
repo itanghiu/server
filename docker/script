@@ -1,0 +1,8 @@
+ #Launches the H2 database container
+ docker run -ti --name=h2db -v /Users/i-tang:/opt/h2-data hiu/h2-alpine
+
+ #Launches the jetty server linked to the h2 container
+docker run --rm -p 8080:8080 --link h2db:jetty -v $HOME/DEV/HSKING_SERVER/target/hsking-1.0-SNAPSHOT:/var/lib/jetty/webapps/hsking jetty
+
+# On accede à l'appli par :
+  http://localhost:8080/hsking/index.html

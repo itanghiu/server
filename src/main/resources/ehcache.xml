@@ -1,0 +1,3 @@
+<ehcache>
+    <cache name="hskingCache" maxElementsInMemory="1000" />
+</ehcache>

@@ -1,0 +1,7 @@
+
+LINKS:
+show how to use docker for a web app , step by step:
+    http://blog.arungupta.me/docker-compose-orchestrate-containers-techtip77/
+
+Get started with Docker Compose :
+    https://docs.docker.com/compose/gettingstarted/

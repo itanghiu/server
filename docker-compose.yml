@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+  h2db:
+    image: hiu/h2-alpine
+    volumes:
+    - /Users/i-tang:/opt/h2-data
+
+  memcached:
+    image: memcached
+
+  jetty:
+    image: jetty
+    volumes:
+    - $HOME/DEV/HSKING_SERVER/target/hsking-1.0-SNAPSHOT:/var/lib/jetty/webapps/hsking
+    ports:
+    - 8080:8080
+    links:
+    - h2db
+    - memcached

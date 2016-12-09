@@ -1,0 +1,4 @@
+<Configure class="org.eclipse.jetty.webapp.WebAppContext">
+<!--<Context path="/hsking" />-->
+    <Set name="contextPath">/hsking</Set>
+</Configure>
